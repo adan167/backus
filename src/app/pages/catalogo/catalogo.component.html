@@ -1,4 +1,5 @@
 <div class="catalogo-shell">
+  <!-- Encabezado y estado de red: el estado cambia según los eventos online/offline. -->
   <header class="topbar">
     <div>
       <p class="eyebrow">Backus Ventas</p>
@@ -12,6 +13,7 @@
     </div>
   </header>
 
+  <!-- Filtros enlazados al estado del componente para buscar y elegir categoría. -->
   <section class="toolbar">
     <label class="search-box">
       <span>Buscar producto</span>
@@ -36,6 +38,7 @@
     </div>
   </section>
 
+  <!-- Productos e imagenes vienen del catálogo; precio y stock se muestran con sus valores actuales. -->
   <main class="catalog-layout">
     <section class="products-section">
       <div class="products-grid">
@@ -116,51 +119,7 @@
     </aside>
   </main>
 
-  <section class="matrix-panel">
-    <h3>Matriz técnica</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Recurso</th>
-          <th>Estrategia</th>
-          <th>Motivo</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>App Shell</td>
-          <td>performance</td>
-          <td>Carga rápida</td>
-        </tr>
-        <tr>
-          <td>Catálogo</td>
-          <td>performance</td>
-          <td>Disponibilidad aunque falle la conexión</td>
-        </tr>
-        <tr>
-          <td>Precios</td>
-          <td>freshness</td>
-          <td>Información reciente</td>
-        </tr>
-        <tr>
-          <td>Stock</td>
-          <td>freshness</td>
-          <td>Información reciente</td>
-        </tr>
-        <tr>
-          <td>Imágenes</td>
-          <td>performance</td>
-          <td>Cambian poco</td>
-        </tr>
-        <tr>
-          <td>Pedido POST</td>
-          <td>IndexedDB + sincronización</td>
-          <td>Runtime Caching no maneja automáticamente POST</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-
+  <!-- Confirmación del pedido: refleja los artículos y totales actuales del carrito. -->
   <section class="modal-backdrop" *ngIf="pedidoVisible">
     <div class="modal-card">
       <h3>Registro de pedido</h3>

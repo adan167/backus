@@ -18,6 +18,7 @@ export interface PrecioStock {
   actualizado: string;
 }
 
+// Centraliza la lectura de los JSON publicados desde src/data para la página del catálogo.
 @Injectable({
   providedIn: 'root'
 })

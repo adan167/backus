@@ -5,6 +5,7 @@ import { provideServiceWorker } from '@angular/service-worker';
 
 import { routes } from './app.routes';
 
+// Proveedores que necesita la página: navegación, carga de datos y caché PWA.
 export const appConfig: ApplicationConfig = {
   providers: [
     provideRouter(routes),

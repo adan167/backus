@@ -3,6 +3,7 @@
   min-height: 100vh;
 }
 
+// Contenedor y encabezado principales de la página.
 .catalogo-shell {
   max-width: 1400px;
   margin: 0 auto;
@@ -57,6 +58,7 @@
   color: #fef3c7;
 }
 
+// Búsqueda y filtros de categoría.
 .toolbar {
   display: grid;
   gap: 16px;
@@ -113,6 +115,7 @@
   color: #0f172a;
 }
 
+// Productos y carrito.
 .catalog-layout {
   display: grid;
   grid-template-columns: minmax(0, 2.3fr) minmax(280px, 0.9fr);
@@ -336,6 +339,7 @@
   color: #0f172a;
 }
 
+// Tabla informativa, diálogo de pedido y aviso de confirmación.
 .matrix-panel {
   margin-top: 32px;
   padding: 20px;

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+// Componente contenedor: el router inserta aquí la página activa, actualmente el catálogo.
 @Component({
   selector: 'app-root',
   standalone: true,
