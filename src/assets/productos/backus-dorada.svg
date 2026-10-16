@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="26" y1="11" x2="220" y2="185" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff3d7"/></linearGradient>
+    <linearGradient id="can" x1="91" y1="35" x2="151" y2="171" gradientUnits="userSpaceOnUse"><stop stop-color="#f7d56f"/><stop offset=".46" stop-color="#d99621"/><stop offset="1" stop-color="#f5c44c"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="174" rx="40" ry="7" fill="#12233e" fill-opacity=".11"/>
+  <path d="M96 38h48l5 14-4 103a10 10 0 0 1-10 10h-30a10 10 0 0 1-10-10L91 52l5-14Z" fill="url(#can)" stroke="#ac7518" stroke-width="2"/>
+  <path d="M97 38h46l-2 9H99l-2-9Z" fill="#c9d0d7" stroke="#7b8490" stroke-width="2"/>
+  <ellipse cx="120" cy="39" rx="14" ry="3" fill="#eef2f6" stroke="#77818c" stroke-width="2"/>
+  <path d="M96 65h48v4H96z" fill="#c52731"/>
+  <text x="120" y="94" fill="#8a2c1e" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1.2" text-anchor="middle">BACKUS</text>
+  <text x="120" y="113" fill="#fffdf4" font-family="Arial,sans-serif" font-size="15" font-weight="900" letter-spacing="1.2" text-anchor="middle">DORADA</text>
+  <text x="120" y="127" fill="#fffdf4" font-family="Arial,sans-serif" font-size="7" font-weight="700" letter-spacing="1.5" text-anchor="middle">CERVEZA</text>
+  <path d="M105 138h30" stroke="#fff5d6" stroke-width="2"/>
+</svg>

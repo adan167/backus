@@ -1,0 +1,62 @@
+[
+  {
+    "productoId": 1,
+    "precio": 3.4,
+    "stock": 120,
+    "actualizado": "2026-10-01T09:00:00"
+  },
+  {
+    "productoId": 2,
+    "precio": 3.2,
+    "stock": 95,
+    "actualizado": "2026-10-01T09:00:00"
+  },
+  {
+    "productoId": 3,
+    "precio": 4.1,
+    "stock": 70,
+    "actualizado": "2026-10-01T09:00:00"
+  },
+  {
+    "productoId": 4,
+    "precio": 2.8,
+    "stock": 150,
+    "actualizado": "2026-10-01T09:05:00"
+  },
+  {
+    "productoId": 5,
+    "precio": 4.5,
+    "stock": 55,
+    "actualizado": "2026-10-01T09:10:00"
+  },
+  {
+    "productoId": 6,
+    "precio": 3.9,
+    "stock": 42,
+    "actualizado": "2026-10-01T09:12:00"
+  },
+  {
+    "productoId": 7,
+    "precio": 2.1,
+    "stock": 180,
+    "actualizado": "2026-10-01T09:15:00"
+  },
+  {
+    "productoId": 8,
+    "precio": 2.6,
+    "stock": 210,
+    "actualizado": "2026-10-01T09:18:00"
+  },
+  {
+    "productoId": 9,
+    "precio": 5.8,
+    "stock": 66,
+    "actualizado": "2026-10-01T09:20:00"
+  },
+  {
+    "productoId": 10,
+    "precio": 21.5,
+    "stock": 18,
+    "actualizado": "2026-10-01T09:25:00"
+  }
+]

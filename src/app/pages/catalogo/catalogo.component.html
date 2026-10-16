@@ -1,0 +1,204 @@
+<div class="catalogo-shell">
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">Backus Ventas</p>
+      <h1>Catálogo de ventas</h1>
+    </div>
+
+    <div class="status-block">
+      <span class="status-badge" [class.online]="isOnline" [class.offline]="!isOnline">
+        {{ isOnline ? 'ONLINE' : 'OFFLINE' }}
+      </span>
+    </div>
+  </header>
+
+  <section class="toolbar">
+    <label class="search-box">
+      <span>Buscar producto</span>
+      <input
+        type="text"
+        [(ngModel)]="buscador"
+        placeholder="Ej: Cristal"
+        aria-label="Buscar producto"
+      />
+    </label>
+
+    <div class="category-list" aria-label="Categorías">
+      <button
+        *ngFor="let categoria of categorias"
+        type="button"
+        class="category-chip"
+        [class.active]="categoria === categoriaSeleccionada"
+        (click)="categoriaSeleccionada = categoria"
+      >
+        {{ categoria }}
+      </button>
+    </div>
+  </section>
+
+  <main class="catalog-layout">
+    <section class="products-section">
+      <div class="products-grid">
+        <article class="product-card" *ngFor="let producto of productosFiltrados">
+          <div class="product-card__image">
+            <img [src]="producto.imagen" [alt]="producto.nombre" loading="lazy" />
+          </div>
+
+          <div class="product-card__content">
+            <div class="product-card__meta">
+              <span class="tag">{{ producto.categoria }}</span>
+              <span class="stock-indicator">Stock: {{ stockActual(producto.id) }}</span>
+            </div>
+
+            <h2>{{ producto.nombre }}</h2>
+            <p class="product-price">S/ {{ precioActual(producto.id) | number: '1.2-2' }}</p>
+
+            <button type="button" class="primary-button" (click)="agregarAlCarrito(producto)">
+              Agregar al carrito
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="cart-panel">
+      <div class="cart-header">
+        <h3>Carrito</h3>
+        <span>{{ cantidadTotal }} productos</span>
+      </div>
+
+      <div class="cart-items" *ngIf="carrito.length; else carritoVacio">
+        <div class="cart-item" *ngFor="let item of carrito">
+          <div class="cart-item__summary">
+            <h4>{{ item.nombre }}</h4>
+            <p>S/ {{ item.precio | number: '1.2-2' }} c/u</p>
+          </div>
+
+          <div class="quantity-controls">
+            <button type="button" (click)="disminuirCantidad(item.id)">-</button>
+            <span>{{ item.cantidad }}</span>
+            <button type="button" (click)="aumentarCantidad(item.id)">+</button>
+          </div>
+
+          <button type="button" class="remove-button" (click)="eliminarProducto(item.id)">
+            Eliminar
+          </button>
+        </div>
+      </div>
+
+      <ng-template #carritoVacio>
+        <p class="empty-state">Aún no hay productos seleccionados.</p>
+      </ng-template>
+
+      <div class="totals-box">
+        <div>
+          <span>Subtotal</span>
+          <strong>S/ {{ subtotal | number: '1.2-2' }}</strong>
+        </div>
+        <div>
+          <span>IGV ({{ porcentajeIgv }}%)</span>
+          <strong>S/ {{ igv | number: '1.2-2' }}</strong>
+        </div>
+        <div>
+          <span>Total</span>
+          <strong>S/ {{ total | number: '1.2-2' }}</strong>
+        </div>
+      </div>
+
+      <button
+        type="button"
+        class="checkout-button"
+        [disabled]="!carrito.length"
+        (click)="pedidoVisible = true"
+      >
+        Registrar pedido
+      </button>
+    </aside>
+  </main>
+
+  <section class="matrix-panel">
+    <h3>Matriz técnica</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Recurso</th>
+          <th>Estrategia</th>
+          <th>Motivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>App Shell</td>
+          <td>performance</td>
+          <td>Carga rápida</td>
+        </tr>
+        <tr>
+          <td>Catálogo</td>
+          <td>performance</td>
+          <td>Disponibilidad aunque falle la conexión</td>
+        </tr>
+        <tr>
+          <td>Precios</td>
+          <td>freshness</td>
+          <td>Información reciente</td>
+        </tr>
+        <tr>
+          <td>Stock</td>
+          <td>freshness</td>
+          <td>Información reciente</td>
+        </tr>
+        <tr>
+          <td>Imágenes</td>
+          <td>performance</td>
+          <td>Cambian poco</td>
+        </tr>
+        <tr>
+          <td>Pedido POST</td>
+          <td>IndexedDB + sincronización</td>
+          <td>Runtime Caching no maneja automáticamente POST</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="modal-backdrop" *ngIf="pedidoVisible">
+    <div class="modal-card">
+      <h3>Registro de pedido</h3>
+
+      <ul class="pedido-list">
+        <li *ngFor="let item of carrito">
+          <span>{{ item.nombre }} x {{ item.cantidad }}</span>
+          <strong>S/ {{ item.cantidad * item.precio | number: '1.2-2' }}</strong>
+        </li>
+      </ul>
+
+      <div class="totals-box">
+        <div>
+          <span>Subtotal</span>
+          <strong>S/ {{ subtotal | number: '1.2-2' }}</strong>
+        </div>
+        <div>
+          <span>IGV ({{ porcentajeIgv }}%)</span>
+          <strong>S/ {{ igv | number: '1.2-2' }}</strong>
+        </div>
+        <div>
+          <span>Total</span>
+          <strong>S/ {{ total | number: '1.2-2' }}</strong>
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" class="primary-button" (click)="registrarPedido()">
+          Registrar pedido
+        </button>
+        <button type="button" class="secondary-button" (click)="pedidoVisible = false">
+          Cancelar
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <div class="notice" *ngIf="mensajePedido">
+    {{ mensajePedido }}
+  </div>
+</div>

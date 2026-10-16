@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="16" y1="13" x2="220" y2="186" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#f1ecff"/></linearGradient>
+    <linearGradient id="basket" x1="81" y1="91" x2="158" y2="169" gradientUnits="userSpaceOnUse"><stop stop-color="#bf8742"/><stop offset="1" stop-color="#855222"/></linearGradient>
+    <linearGradient id="bottle" x1="99" y1="35" x2="123" y2="112" gradientUnits="userSpaceOnUse"><stop stop-color="#eac553"/><stop offset="1" stop-color="#a56e1f"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="174" rx="57" ry="7" fill="#12233e" fill-opacity=".11"/>
+  <path d="M100 40h17v12l7 9 4 47a7 7 0 0 1-7 8h-25a7 7 0 0 1-7-8l4-47 7-9V40Z" fill="url(#bottle)" stroke="#79531e" stroke-width="2"/>
+  <path d="M100 40h17v10h-17z" fill="#f6e9c0" stroke="#79531e" stroke-width="2"/>
+  <path d="M94 69h28l3 26H91l3-26Z" fill="#fffdf5"/>
+  <text x="108" y="81" fill="#184879" font-family="Arial,sans-serif" font-size="5" font-weight="900" text-anchor="middle">CRISTAL</text>
+  <text x="108" y="89" fill="#184879" font-family="Arial,sans-serif" font-size="5" font-weight="900" text-anchor="middle">PREMIUM</text>
+  <path d="M129 48h14l5 13 3 41a7 7 0 0 1-7 8h-17a7 7 0 0 1-7-8l3-41 5-13Z" fill="#bb323c" stroke="#8f2028" stroke-width="2"/>
+  <path d="M129 48h14v7h-14z" fill="#d3d9df" stroke="#818a95" stroke-width="2"/>
+  <text x="137" y="81" fill="#fff" font-family="Arial,sans-serif" font-size="5" font-weight="900" text-anchor="middle">PILSEN</text>
+  <path d="m76 111 88 0-11 48a10 10 0 0 1-10 8H97a10 10 0 0 1-10-8l-11-48Z" fill="url(#basket)" stroke="#72451f" stroke-width="2"/>
+  <path d="m86 122 69 0m-66 13 63 0m-60 13 56 0m-48-36 9 47m14-47 3 48m16-48-2 46" stroke="#e8bc76" stroke-width="3"/>
+  <path d="M92 112a28 28 0 0 1 56 0" stroke="#91632f" stroke-width="5" stroke-linecap="round"/>
+</svg>

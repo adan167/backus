@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="218" y2="188" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#e0f3ff"/></linearGradient>
+    <linearGradient id="bottle" x1="97" y1="52" x2="146" y2="176" gradientUnits="userSpaceOnUse"><stop stop-color="#fff" stop-opacity=".85"/><stop offset=".5" stop-color="#9cddf4" stop-opacity=".65"/><stop offset="1" stop-color="#fff" stop-opacity=".9"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="175" rx="38" ry="7" fill="#12233e" fill-opacity=".1"/>
+  <path d="M109 32h22v16l10 12 8 99a13 13 0 0 1-13 14h-32a13 13 0 0 1-13-14l8-99 10-12V32Z" fill="url(#bottle)" stroke="#70b6d2" stroke-width="2"/>
+  <path d="M109 32h22v13h-22z" fill="#1886c7" stroke="#1673a9" stroke-width="2"/>
+  <path d="M102 83h36l4 40h-44l4-40Z" fill="#f7fdff" stroke="#cae9f4" stroke-width="2"/>
+  <path d="M104 87h32v9h-32z" fill="#228dc2"/>
+  <text x="120" y="108" fill="#176b9a" font-family="Arial,sans-serif" font-size="9" font-weight="900" letter-spacing="1" text-anchor="middle">AGUA</text>
+  <text x="120" y="119" fill="#489abb" font-family="Arial,sans-serif" font-size="7" font-weight="700" letter-spacing="1" text-anchor="middle">MINERAL</text>
+  <path d="M120 64c-7 10-9 13-9 18a9 9 0 0 0 18 0c0-5-2-8-9-18Z" fill="#52bce0" fill-opacity=".75"/>
+</svg>

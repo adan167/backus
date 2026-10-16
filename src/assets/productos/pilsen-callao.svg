@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="16" y1="11" x2="220" y2="190" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#e9efff"/></linearGradient>
+    <linearGradient id="glass" x1="98" y1="58" x2="142" y2="175" gradientUnits="userSpaceOnUse"><stop stop-color="#f5d66b"/><stop offset=".5" stop-color="#b58327"/><stop offset="1" stop-color="#edc655"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="175" rx="44" ry="8" fill="#12233e" fill-opacity=".12"/>
+  <path d="M108 28h24v18l12 17 7 90a14 14 0 0 1-14 15h-34a14 14 0 0 1-14-15l7-90 12-17V28Z" fill="url(#glass)" stroke="#805d22" stroke-width="2"/>
+  <path d="M109 29h22v15h-22z" fill="#d9dde3" stroke="#805d22" stroke-width="2"/>
+  <path d="M101 73h38l5 58h-48l5-58Z" fill="#fdfcf7" stroke="#e5e7eb" stroke-width="2"/>
+  <path d="M103 76h34v16h-34z" fill="#164a9a"/>
+  <text x="120" y="105" fill="#193b70" font-family="Arial,sans-serif" font-size="10" font-weight="800" text-anchor="middle">PILSEN</text>
+  <text x="120" y="117" fill="#193b70" font-family="Arial,sans-serif" font-size="8" font-weight="700" letter-spacing="1" text-anchor="middle">CALLAO</text>
+  <path d="M103 126h34" stroke="#d5ad45" stroke-width="2"/>
+  <text x="120" y="139" fill="#64748b" font-family="Arial,sans-serif" font-size="6" font-weight="700" letter-spacing="1" text-anchor="middle">DESDE 1863</text>
+</svg>

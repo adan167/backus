@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="18" y1="12" x2="217" y2="188" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#fff3d7"/></linearGradient>
+    <linearGradient id="glass" x1="97" y1="58" x2="146" y2="177" gradientUnits="userSpaceOnUse"><stop stop-color="#f5d777"/><stop offset=".46" stop-color="#bf8827"/><stop offset="1" stop-color="#efd05d"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="175" rx="44" ry="8" fill="#12233e" fill-opacity=".12"/>
+  <path d="M108 28h24v18l12 17 7 90a14 14 0 0 1-14 15h-34a14 14 0 0 1-14-15l7-90 12-17V28Z" fill="url(#glass)" stroke="#88621f" stroke-width="2"/>
+  <path d="M109 29h22v15h-22z" fill="#b82928" stroke="#805d22" stroke-width="2"/>
+  <path d="M101 71h38l5 61h-48l5-61Z" fill="#fffdf5" stroke="#eee4c9" stroke-width="2"/>
+  <path d="M103 74h34v10h-34z" fill="#b82928"/>
+  <text x="120" y="102" fill="#a87820" font-family="Arial,sans-serif" font-size="13" font-weight="900" letter-spacing="1" text-anchor="middle">GOLDEN</text>
+  <text x="120" y="115" fill="#35445a" font-family="Arial,sans-serif" font-size="8" font-weight="800" letter-spacing="1.5" text-anchor="middle">LAGER</text>
+  <path d="M104 125h32" stroke="#d3aa54" stroke-width="2"/>
+  <text x="120" y="138" fill="#657187" font-family="Arial,sans-serif" font-size="6" font-weight="700" letter-spacing="1" text-anchor="middle">500 ml</text>
+</svg>

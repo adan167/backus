@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "nombre": "Cristal 620 ml",
+    "categoria": "Cerveza",
+    "precio": 3.4,
+    "stock": 120,
+    "imagen": "/assets/productos/cristal.svg"
+  },
+  {
+    "id": 2,
+    "nombre": "Pilsen Callao 620 ml",
+    "categoria": "Cerveza",
+    "precio": 3.2,
+    "stock": 95,
+    "imagen": "/assets/productos/pilsen-callao.svg"
+  },
+  {
+    "id": 3,
+    "nombre": "Cusqueña 620 ml",
+    "categoria": "Cerveza",
+    "precio": 4.1,
+    "stock": 70,
+    "imagen": "/assets/productos/cusquena.svg"
+  },
+  {
+    "id": 4,
+    "nombre": "Backus Dorada 330 ml",
+    "categoria": "Cerveza",
+    "precio": 2.8,
+    "stock": 150,
+    "imagen": "/assets/productos/backus-dorada.svg"
+  },
+  {
+    "id": 5,
+    "nombre": "Golden Lager 500 ml",
+    "categoria": "Cerveza",
+    "precio": 4.5,
+    "stock": 55,
+    "imagen": "/assets/productos/golden-lager.svg"
+  },
+  {
+    "id": 6,
+    "nombre": "Sin Alcohol Premium",
+    "categoria": "Sin alcohol",
+    "precio": 3.9,
+    "stock": 42,
+    "imagen": "/assets/productos/sin-alcohol.svg"
+  },
+  {
+    "id": 7,
+    "nombre": "Agua Mineral 1 L",
+    "categoria": "Bebidas",
+    "precio": 2.1,
+    "stock": 180,
+    "imagen": "/assets/productos/agua-mineral.svg"
+  },
+  {
+    "id": 8,
+    "nombre": "Gaseosa Cola 600 ml",
+    "categoria": "Bebidas",
+    "precio": 2.6,
+    "stock": 210,
+    "imagen": "/assets/productos/gaseosa-cola.svg"
+  },
+  {
+    "id": 9,
+    "nombre": "Mix de Snacks",
+    "categoria": "Snacks",
+    "precio": 5.8,
+    "stock": 66,
+    "imagen": "/assets/productos/mix-snacks.svg"
+  },
+  {
+    "id": 10,
+    "nombre": "Canasta de Cerveza Premium",
+    "categoria": "Promoción",
+    "precio": 21.5,
+    "stock": 18,
+    "imagen": "/assets/productos/canasta-premium.svg"
+  }
+]

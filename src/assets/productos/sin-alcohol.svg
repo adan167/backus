@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 200" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="22" y1="12" x2="216" y2="186" gradientUnits="userSpaceOnUse"><stop stop-color="#fff"/><stop offset="1" stop-color="#dcf7f2"/></linearGradient>
+    <linearGradient id="glass" x1="98" y1="57" x2="146" y2="177" gradientUnits="userSpaceOnUse"><stop stop-color="#f5d578"/><stop offset=".48" stop-color="#c18e30"/><stop offset="1" stop-color="#eed064"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="224" height="184" rx="24" fill="url(#bg)"/>
+  <ellipse cx="120" cy="175" rx="43" ry="8" fill="#12233e" fill-opacity=".11"/>
+  <path d="M108 28h24v18l12 17 7 90a14 14 0 0 1-14 15h-34a14 14 0 0 1-14-15l7-90 12-17V28Z" fill="url(#glass)" stroke="#896528" stroke-width="2"/>
+  <path d="M109 29h22v15h-22z" fill="#d9efeb" stroke="#896528" stroke-width="2"/>
+  <path d="M101 72h38l5 60h-48l5-60Z" fill="#edfff9" stroke="#bfe9df" stroke-width="2"/>
+  <path d="M101 75h38v15h-38z" fill="#138c7d"/>
+  <text x="120" y="108" fill="#087366" font-family="Arial,sans-serif" font-size="8" font-weight="800" letter-spacing="1" text-anchor="middle">SIN ALCOHOL</text>
+  <text x="120" y="121" fill="#264f55" font-family="Arial,sans-serif" font-size="9" font-weight="900" letter-spacing="1.1" text-anchor="middle">PREMIUM</text>
+  <path d="M105 132h30" stroke="#47b7a4" stroke-width="2"/>
+</svg>
